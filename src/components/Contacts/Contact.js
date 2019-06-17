@@ -13,6 +13,7 @@ class Contact extends Component {
                         <h4>EMAIL:</h4>
                         <h4>PHONE NUMBER:</h4>
 
+
                     </div>
                     <div className="flexElementContact">
                         <h4>tetyana.radu@gmail.com</h4>
