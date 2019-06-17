@@ -1,0 +1,154 @@
+.projectHolder{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    animation: visible 1s;
+}
+
+.projects{
+    width: 48%;
+    height: 42vh;
+    border: 2px solid #152644;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-width: 300px;
+    min-height: 200px;
+
+
+}
+
+.projects p{
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+}
+.repoLink:hover{
+    font-weight: 300;
+}
+.discription{
+    visibility: hidden;
+    height: 90%;
+    width: 80%;
+    color: #d0f8fd;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #d0f8fd;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.grey{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.grey:hover{
+ background-color:rgba(0,0,0,0.7);
+
+}
+@keyframes appearance {
+    0%   {padding-top: 5%;}
+    100% {padding-top: 0%;}
+  }
+
+  @keyframes visible {
+    from {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }}
+  @keyframes colorBorder {
+    0%   {border-color:rgba(255, 255, 255, 0.7);}
+    100%   {border-color:rgba(255, 255, 255, 1);}
+  }
+.projects:hover .discription{
+    visibility: visible;
+    animation: colorBorder 0.1s;
+}
+.projects:hover p{
+    visibility: visible;
+    animation: appearance 0.5s;
+}
+
+#project1{
+    background: url("../../img/CO2mapproject.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#project2{
+    background-image: url("../../img/caretaker.png");
+}
+#project3{
+    background-image: url("../../img/projecr2.png");
+}
+#project4{
+    background-image: url('../../img/whack-a-mole.png');
+}
+@media only screen and (max-width: 769px){
+    .grey{
+        background-color:rgba(0,0,0,0.7);
+       }
+
+       .projects .discription{
+        visibility: visible;
+        animation: colorBorder 0.1s;
+    }
+    .projects p{
+        visibility: visible;
+        animation: appearance 0.5s;
+    }
+    
+}
+@media only screen and (max-width: 520px) {
+    .projectHolder{
+        height: 100%;
+        width: 100%;
+  }
+  projects{
+    width: 90%;
+    height: 42vh;
+}
+
+}
+
+@media only screen and (max-width: 320px) {
+    projects{
+        min-width: 300px;
+        min-height: 200px;
+    }
+}
+button{
+    background-color: rgb(208, 248, 253);
+    border: 1px solid #152644;
+    border-radius: 2px;
+}
+button:focus{
+    outline: none;
+}
+p{
+    margin: 0;
+}

@@ -1,0 +1,64 @@
+
+
+/* h2 {
+    display: inline-block;
+    font-size: 80px;
+    line-height: 0.9;
+    padding: 20px;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    background: radial-gradient(
+      circle farthest-corner at center center,
+      white,
+      #111
+    ) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+
+.myName, .title{
+    display: block;
+    font-size: 2em;
+    line-height: 1;
+    margin: 0;
+    color: rgb(208, 248, 253);
+    /* font-family: 'Teco', sans-serif; */
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 100;
+    font-stretch: extra-expanded;
+
+
+}
+ .myName{
+      padding: 0;
+      margin-top: 15%;
+      /* border-bottom: 1px solid #E4FEFE; */
+  
+  }
+ #name{
+      border-bottom: 1px solid rgba(238,232,255,0.57);
+      margin: 0;
+  }
+  .title{
+    font-size: 1em; 
+    text-align:justify;
+    line-height: 1.4;
+    padding: 0;
+    margin-top: 1%;
+    
+  }
+.mainPage{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 8%;
+    /* height: 100%;
+    width: 100%;
+    background: url('../../img/world-map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+    position:fixed ; */
+}
+
+

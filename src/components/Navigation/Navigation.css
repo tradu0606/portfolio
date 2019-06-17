@@ -1,0 +1,23 @@
+.envelope {
+    color: rgba(238,232,255,0.57);
+}
+.contactPage{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    text-align: right;
+    margin-bottom: 20%;
+}
+
+/* span{
+    margin: 2% 0 0 3%;
+    font-size: 1.5em;
+
+} */
+
+.navigationHolder{
+    padding-top: 20%;
+    text-align: center;
+    
+}
