@@ -23,3 +23,6 @@ h5{
     margin: 0;
     font-weight: 100;
 }
+.contactLinks:hover{
+    font-weight: 300;
+}

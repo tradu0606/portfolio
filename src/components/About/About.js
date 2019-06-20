@@ -7,6 +7,10 @@ class About extends Component {
     redirectPortfolio=() =>{
         this.props.history.push("/portfolio")
     }
+
+    redirectSkills=() =>{
+        this.props.history.push("/skills")
+    }
     render() {
         return (
             <div>
@@ -14,12 +18,12 @@ class About extends Component {
             <div id="about">
                 <h3>
                 I'm a full-stack web developer based in Reston, Virginia. 
-                I started to learn programming on my own and continue developing my 
-                skills exploring the vast landscape of technologies. Driven and constantly 
-                curious I’m ready to solve complex problems and create impactful and innovative 
+                I've developed my skills exploring the vast landscape of technologies. Driven and constantly 
+                curious, I’m ready to solve complex problems and create impactful and innovative 
                 solutions. < br /> You can get in touch with me <Link id="hereContactsLink" to="/contact">here</Link>.
                 </h3>
-                <input onClick={this.redirectPortfolio} id="explore_button" type="button" value="EXPLORE WORK"></input>
+                <input onClick={this.redirectPortfolio} className="explore_button" type="button" value="EXPLORE WORK"></input>
+                <input onClick={this.redirectSkills} className="explore_button" type="button" value="EXPLORE SKILLS"></input>
             </div>
             </div>
         );

@@ -8,7 +8,7 @@
 
 }
 
-#explore_button{
+.explore_button{
     background-color: transparent;
     color: rgb(208, 248, 253);
     border: 1px solid rgba(238,232,255,0.57);
@@ -17,11 +17,13 @@
     height: 40px;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 0.9em;
+    margin-right: 5%;
+    font-weight: 100;
 }
-#explore_button:focus {
+.explore_button:focus {
     outline: none;
 }
 
 #hereContactsLink:hover{
-    font-weight: 200;
+    font-weight: 300;
 }

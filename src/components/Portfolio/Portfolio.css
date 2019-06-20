@@ -11,8 +11,8 @@
 }
 
 .projects{
-    width: 48%;
-    height: 42vh;
+    width: 37%;
+    height: 36vh;
     border: 2px solid #152644;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,7 +22,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 5px;
     min-width: 300px;
     min-height: 200px;
 
@@ -30,13 +30,13 @@
 }
 
 .projects p{
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: 'Lato', sans-serif;
-}
-.repoLink:hover{
     font-weight: 300;
 }
+
 .discription{
+    padding: 1%;
     visibility: hidden;
     height: 90%;
     width: 80%;
@@ -64,7 +64,7 @@
 }
 
 .grey:hover{
- background-color:rgba(0,0,0,0.7);
+ background-color:rgba(0,0,0,0.8);
 
 }
 @keyframes appearance {
@@ -108,11 +108,38 @@
 #project4{
     background-image: url('../../img/whack-a-mole.png');
 }
-@media only screen and (max-width: 769px){
+
+.buttonHolder{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.portfolioButtons{
+    width: 40%;
+    height: 100%;
+}
+@media only screen and (max-width: 1024px){
+    .projects p{
+        font-size: 0.7em;
+    }
+    .portfolioButtons{
+        width: 60%;
+    }
+
+    .discription{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     .grey{
         background-color:rgba(0,0,0,0.7);
        }
-
+       .buttonHolder{
+        flex-direction: column;
+        
+       }
        .projects .discription{
         visibility: visible;
         animation: colorBorder 0.1s;
@@ -121,14 +148,17 @@
         visibility: visible;
         animation: appearance 0.5s;
     }
-    
+  
 }
 @media only screen and (max-width: 520px) {
     .projectHolder{
         height: 100%;
         width: 100%;
   }
-  projects{
+  .projects p{
+    font-size: 1em;
+}
+  .projects{
     width: 90%;
     height: 42vh;
 }
@@ -136,19 +166,30 @@
 }
 
 @media only screen and (max-width: 320px) {
-    projects{
+    .projects p{
+        font-size: 1em;
+    }
+    .projects{
         min-width: 300px;
         min-height: 200px;
     }
 }
+
 button{
     background-color: rgb(208, 248, 253);
     border: 1px solid #152644;
     border-radius: 2px;
+    display: inline-block;
+    width: 100%;
+    padding: 2% 0;
 }
 button:focus{
     outline: none;
 }
 p{
     margin: 0;
+}
+
+#projecth3{
+    margin-left: 3%;
 }
