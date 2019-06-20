@@ -18,7 +18,7 @@ class About extends Component {
             <div id="about">
                 <h3>
                 I'm a full-stack web developer based in Reston, Virginia. 
-                I've developed my skills exploring the vast landscape of technologies. Driven and constantly 
+                Developed my skills exploring the vast landscape of technologies. Driven and constantly 
                 curious, I’m ready to solve complex problems and create impactful and innovative 
                 solutions. < br /> You can get in touch with me <Link id="hereContactsLink" to="/contact">here</Link>.
                 </h3>

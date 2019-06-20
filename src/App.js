@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { Component } from 'react';
 import './components/Main/Main.css'
 import { Route, Switch } from 'react-router-dom'
 import './assets/css/fonts.css'
@@ -16,7 +15,11 @@ import Contact from './components/Contacts/Contact'
 import './App.css';
 
 
-function App() {
+class App extends Component  {
+  componentDidMount(){
+    document.title = "Tetyana Radu"
+  }
+  render (){
   return (
 
     <div className="App">  
@@ -41,7 +44,7 @@ function App() {
         </Switch>
     </div>
     
-  );
+  );}
 }
 
 export default App;
